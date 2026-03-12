@@ -1,16 +1,21 @@
 package assignment2;
 
-import java.util.ArrayList;
 
 public class Main {
     public static void main(String[] args) {
+        System.out.println("Stack:");
+        IntStack stack = new IntStack();
+        System.out.println(stack.isEmpty());
 
-        String[] names = {"Brandon", "Steven", "Blaine", "Roman", "Landon"};
-        LinkedList<String> linkedList = new LinkedList<>(names);
-        System.out.println(linkedList.toString());
-        linkedList.insert(2, "Fredrick");
-        System.out.println(linkedList.toString());
-        linkedList.remove(6);
-        System.out.println(linkedList.toString());
+        for(int i = 1; i < 11; i++){
+            stack.push(i);
+        }
+
+        System.out.println(stack.isEmpty());
+        System.out.println(stack.size());
+        System.out.println(stack.pop());
+        System.out.println(stack.peek());
+        System.out.println(stack.average());
+
     }
 }

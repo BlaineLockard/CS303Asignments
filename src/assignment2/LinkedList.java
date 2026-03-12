@@ -39,11 +39,11 @@ public class LinkedList<T> {
         size++;
     }
 
-    public T getFirst(){
+    public T peekFirst(){
         return head.data;
     }
 
-    public T getLast(){
+    public T peekLast(){
         return tail.data;
     }
 
@@ -134,6 +134,7 @@ public class LinkedList<T> {
     public int find(T data){
       Node current = head;
       int index = 0;
+      // Get node before our target
       while(current.next != null){
           if(current.data.equals(data)){
               return index;
@@ -144,7 +145,7 @@ public class LinkedList<T> {
       return -1;
     }
 
-    public int getSize(){
+    public int size(){
         return size;
     }
 
