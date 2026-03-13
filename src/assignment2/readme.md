@@ -1,7 +1,7 @@
 # Assignment 2 – IntStack & LinkedList
 
 ## How to run
-Compile and run Main in any IDE
+Compile and run `Main.java` in any IDE
 
 ## Design overview
 
@@ -52,3 +52,4 @@ false         ← isEmpty() after pushing 1–10
 9             ← peek()  (new top, 10 is gone)
 5.0           ← average() of remaining [1..9]
 ```
+
