@@ -145,6 +145,20 @@ public class LinkedList<T> {
       return -1;
     }
 
+    public T get(int index){
+        if(index < 0 || index >= size){
+            return null;
+        }
+        Node current = head;
+        int count = 0;
+        while(current.next != null){
+            if(count == index){
+                return current.data;
+            }
+        }
+        return null;
+    }
+
     public int size(){
         return size;
     }

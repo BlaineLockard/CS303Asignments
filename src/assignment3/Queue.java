@@ -35,5 +35,8 @@ public class Queue <T> {
         return data.isEmpty();
     }
 
+    public String toString(){
+        return data.toString();
+    }
 
 }
